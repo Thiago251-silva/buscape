@@ -1,222 +1,455 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Buscapé - Tela Inicial - iPhone 17</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscapé Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-  <div class="viewport">
-    <div class="phone-frame" data-node-name="Buscapé - Tela Inicial - iPhone 17">
-      <div class="Header" data-node-name="Header">
-        <div class="Header-shadow" data-node-name="Header:shadow"></div>
-        <div class="Container header-top" data-node-name="Container">
-          <div class="Heading-1" data-node-name="Heading 1">
-            <div class="Text" data-node-name="Text">BUSCAPÉ</div>
-          </div>
-          <div class="Container header-actions" data-node-name="Container">
-            <div class="Icon bell-icon" data-node-name="Icon"></div>
-            <div class="Icon profile-icon" data-node-name="Icon"></div>
-          </div>
+    <div id="app">
+        <div id="screen-home" class="screen active">
+            <header class="header-yellow">
+                <div class="header-top">
+                    <div class="logo">BUSCAPÉ</div>
+                    <div class="header-icons">
+                        <span class="material-symbols-outlined">notifications</span>
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <span class="material-symbols-outlined">search</span>
+                    <input type="text" placeholder="O que você está buscando?">
+                </div>
+            </header>
+
+            <div class="content">
+                <section class="categories">
+                    <h2>Categorias Populares</h2>
+                    <div class="cat-list">
+                        <div class="cat-item">
+                            <div class="cat-icon"><span class="material-symbols-outlined">smartphone</span></div>
+                            <span>Celulares</span>
+                        </div>
+                        <div class="cat-item">
+                            <div class="cat-icon"><span class="material-symbols-outlined">tv</span></div>
+                            <span>TVs</span>
+                        </div>
+                        <div class="cat-item">
+                            <div class="cat-icon"><span class="material-symbols-outlined">laptop_mac</span></div>
+                            <span>Notebooks</span>
+                        </div>
+                        <div class="cat-item">
+                            <div class="cat-icon"><span class="material-symbols-outlined">more_horiz</span></div>
+                            <span>Ver todas</span>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="action-buttons">
+                    <button class="btn-yellow">
+                        <span class="material-symbols-outlined">trending_down</span>
+                        Menores Preços
+                    </button>
+                    <button class="btn-light">
+                        <span class="material-symbols-outlined">local_fire_department</span>
+                        Ofertas do Dia
+                    </button>
+                </div>
+
+                <section class="recent">
+                    <div class="section-header">
+                        <h2>Vistos Recentemente</h2>
+                        <a href="#">Ver tudo</a>
+                    </div>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="img-placeholder"></div>
+                            <span class="brand">SAMSUNG</span>
+                            <h3>Smartphone Samsung Galaxy S23</h3>
+                            <span class="old-price">R$ 6.499,00</span>
+                            <span class="price">R$ 5.299,00</span>
+                            <span class="discount">12% OFF no Pix</span>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-placeholder"></div>
+                            <span class="brand">LG</span>
+                            <h3>Smart TV 55" OLED LG 4K ThinQ AI</h3>
+                            <span class="old-price">R$ 4.299,00</span>
+                            <span class="price">R$ 3.899,00</span>
+                            <span class="discount">9% OFF</span>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-placeholder"></div>
+                            <span class="brand">APPLE</span>
+                            <h3>MacBook Air M2 13" 8GB 256GB SSD</h3>
+                            <span class="old-price">R$ 9.999,00</span>
+                            <span class="price">R$ 8.199,00</span>
+                            <span class="cashback">Cashback R$ 200</span>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-placeholder"></div>
+                            <span class="brand">SONY</span>
+                            <h3>Fone de Ouvido Sony WH-1000XM5</h3>
+                            <span class="old-price">R$ 2.499,00</span>
+                            <span class="price">R$ 1.999,00</span>
+                            <span class="cheapest">O mais barato!</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="fab">
+                <span class="material-symbols-outlined">notifications</span>
+            </div>
         </div>
-        <div class="Container header-search" data-node-name="Container">
-          <div class="Input" data-node-name="Input">
-            <div class="Container" data-node-name="Container">
-              <div class="Text" data-node-name="O que você está buscando?">O que você está buscando?</div>
-            </div>
-            <div class="Container search-icon" data-node-name="Container"></div>
-          </div>
-        </div>
-      </div>
 
-      <div class="Main" data-node-name="Main">
-        <div class="Section categories" data-node-name="Section">
-          <div class="Heading-2" data-node-name="Heading 2">
-            <div class="Text" data-node-name="Categorias Populares">Categorias Populares</div>
-          </div>
-          <div class="Container category-row" data-node-name="Container">
-            <div class="Container category-card" data-node-name="Container">
-              <div class="Background-Border" data-node-name="Background+Border"></div>
-              <div class="Container category-label" data-node-name="Container">
-                <div class="Text" data-node-name="Text">Celulares</div>
-              </div>
-            </div>
-            <div class="Container category-card" data-node-name="Container">
-              <div class="Background-Border" data-node-name="Background+Border"></div>
-              <div class="Container category-label" data-node-name="Container">
-                <div class="Text" data-node-name="Text">TVs</div>
-              </div>
-            </div>
-            <div class="Container category-card" data-node-name="Container">
-              <div class="Background-Border" data-node-name="Background+Border"></div>
-              <div class="Container category-label" data-node-name="Container">
-                <div class="Text" data-node-name="Text">Notebooks</div>
-              </div>
-            </div>
-            <div class="Container category-card" data-node-name="Container">
-              <div class="Background-Border" data-node-name="Background+Border"></div>
-              <div class="Container category-label" data-node-name="Container">
-                <div class="Text" data-node-name="Text">Ver todas</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="Section actions" data-node-name="Section">
-          <div class="Button action-card primary" data-node-name="Button">
-            <div class="Icon action-icon" data-node-name="Icon"></div>
-            <div class="Container action-label" data-node-name="Container">
-              <div class="Text" data-node-name="Text">Menores Preços</div>
-            </div>
-          </div>
-          <div class="Button action-card secondary" data-node-name="Button">
-            <div class="Icon action-icon" data-node-name="Icon"></div>
-            <div class="Container action-label" data-node-name="Container">
-              <div class="Text" data-node-name="Text">Ofertas do Dia</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="Section recent" data-node-name="Section">
-          <div class="Container recent-header" data-node-name="Container">
-            <div class="Heading-2" data-node-name="Heading 2">
-              <div class="Text" data-node-name="Text">Vistos Recentemente</div>
-            </div>
-            <div class="Button recent-link" data-node-name="Button">
-              <div class="Text" data-node-name="Text">Ver tudo</div>
-            </div>
-          </div>
-
-          <div class="Container recent-list" data-node-name="Container">
-            <div class="Background-Border-Shadow product-card" data-node-name="Background+Border+Shadow">
-              <div class="Background product-background" data-node-name="Background">
-                <div class="Smartphone" data-node-name="Smartphone"></div>
-              </div>
-              <div class="Container product-info" data-node-name="Container">
-                <div class="Container brand-row" data-node-name="Container">
-                  <div class="Text" data-node-name="Text">SAMSUNG</div>
+        <div id="screen-search" class="screen">
+            <header class="header-yellow search-header">
+                <span class="material-symbols-outlined back-btn" onclick="navigate('screen-home')">arrow_back</span>
+                <div class="search-bar mini">
+                    <span class="material-symbols-outlined">search</span>
+                    <input type="text" value="Smartphones">
                 </div>
-                <div class="Heading-3" data-node-name="Heading 3">
-                  <div class="Text" data-node-name="Text">Smartphone<br>Samsung Galaxy S23</div>
+                <div class="cart-icon">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                    <span class="badge">2</span>
                 </div>
-                <div class="Container price-row" data-node-name="Container">
-                  <div class="Container" data-node-name="Container">
-                    <div class="Text" data-node-name="Text">R$ 6.499,00</div>
-                  </div>
-                  <div class="Container" data-node-name="Container">
-                    <div class="Text" data-node-name="Text">R$ 5.299,00</div>
-                  </div>
-                  <div class="Container" data-node-name="Container">
-                    <div class="Text" data-node-name="Text">12% OFF no Pix</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="Background-Border-Shadow product-card" data-node-name="Background+Border+Shadow">
-              <div class="Background product-background" data-node-name="Background">
-                <div class="Smart-TV" data-node-name="Smart TV"></div>
-              </div>
-              <div class="Container product-info" data-node-name="Container">
-                <div class="Container brand-row" data-node-name="Container">
-                  <div class="Text" data-node-name="Text">LG</div>
-                </div>
-                <div class="Heading-3" data-node-name="Heading 3">
-                  <div class="Text" data-node-name="Text">Smart TV 55" OLED<br>LG 4K ThinQ AI</div>
-                </div>
-                <div class="Container price-row" data-node-name="Container">
-                  <div class="Container" data-node-name="Container">
-                    <div class="Text" data-node-name="Text">R$ 4.299,00</div>
-                  </div>
-                  <div class="Container" data-node-name="Container">
-                    <div class="Text" data-node-name="Text">R$ 3.899,00</div>
-                  </div>
-                  <div class="Container" data-node-name="Container">
-                    <div class="Text" data-node-name="Text">9% OFF</div>
-                  </div>
-                </div>
-              </div>
+            </header>
+            
+            <div class="filters">
+                <button class="filter-btn"><span class="material-symbols-outlined">tune</span> Filtrar</button>
+                <button class="filter-btn active-filter"><span class="material-symbols-outlined">sort</span> Menor Preço Total</button>
+                <button class="filter-btn">iPhone 15</button>
+                <button class="filter-btn">Samsun...</button>
             </div>
 
-            <div class="Background-Border-Shadow product-card" data-node-name="Background+Border+Shadow">
-              <div class="Background product-background" data-node-name="Background">
-                <div class="Macbook" data-node-name="Macbook"></div>
-              </div>
-              <div class="Container product-info" data-node-name="Container">
-                <div class="Container brand-row" data-node-name="Container">
-                  <div class="Text" data-node-name="Text">APPLE</div>
+            <div class="content results-content">
+                <div class="results-header">
+                    <span>1.240 resultados</span>
+                    <span class="price-drop">Preços em queda ↓</span>
                 </div>
-                <div class="Heading-3" data-node-name="Heading 3">
-                  <div class="Text" data-node-name="Text">MacBook Air M2 13"<br>8GB 256GB SSD</div>
+
+                <div class="result-list">
+                    <div class="result-card">
+                        <div class="res-top">
+                            <div class="res-img"></div>
+                            <div class="res-info">
+                                <span class="brand">APPLE</span>
+                                <h3>iPhone 15 Apple 128GB Preto Tela 6,1" 48MP</h3>
+                                <div class="rating"><span class="material-symbols-outlined star">star</span> 4.8 <span class="reviews">(1.2k)</span></div>
+                            </div>
+                            <span class="material-symbols-outlined fav-icon">favorite_border</span>
+                        </div>
+                        <div class="res-offers">
+                            <h4>MELHORES OFERTAS (CUSTO TOTAL)</h4>
+                            <div class="offer-row">
+                                <div class="store-info">
+                                    <div class="store-logo">MAGA</div>
+                                    <div>
+                                        <strong>Magalu</strong>
+                                        <div class="store-freight">R$ 4.299 + R$ 15,00 frete</div>
+                                    </div>
+                                </div>
+                                <div class="offer-price-col">
+                                    <strong class="total-green">R$ 4.314,00 total</strong>
+                                    <a href="#">Ir à loja</a>
+                                </div>
+                            </div>
+                            <div class="offer-row">
+                                <div class="store-info">
+                                    <div class="store-logo">AMZN</div>
+                                    <div>
+                                        <strong>Amazon</strong>
+                                        <div class="store-freight">R$ 4.350 + frete grátis</div>
+                                    </div>
+                                </div>
+                                <div class="offer-price-col">
+                                    <strong>R$ 4.350,00 total</strong>
+                                    <a href="#">Ir à loja</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result-card">
+                        <div class="res-top">
+                            <div class="res-img"></div>
+                            <div class="res-info">
+                                <span class="brand">SAMSUNG</span>
+                                <h3>Samsung Galaxy S24 Ultra 512GB Cinza Titanium</h3>
+                                <div class="rating"><span class="material-symbols-outlined star">star</span> 4.9 <span class="reviews">(856)</span></div>
+                            </div>
+                            <span class="material-symbols-outlined fav-icon red">favorite</span>
+                        </div>
+                        <div class="res-offers">
+                            <h4>MELHORES OFERTAS (CUSTO TOTAL)</h4>
+                            <div class="offer-row">
+                                <div class="store-info">
+                                    <div class="store-logo">ML</div>
+                                    <div>
+                                        <strong>Mercado Livre</strong>
+                                        <div class="store-freight">R$ 5.890 + R$ 29,90 frete</div>
+                                    </div>
+                                </div>
+                                <div class="offer-price-col">
+                                    <strong class="total-green">R$ 5.919,90 total</strong>
+                                    <a href="#">Ir à loja</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result-card">
+                        <div class="res-top">
+                            <div class="res-img"></div>
+                            <div class="res-info">
+                                <span class="brand">XIAOMI</span>
+                                <h3>Xiaomi Redmi Note 13 4G 256GB 8GB RAM</h3>
+                                <div class="rating"><span class="material-symbols-outlined star">star</span> 4.5 <span class="reviews">(432)</span></div>
+                            </div>
+                            <span class="material-symbols-outlined fav-icon">favorite_border</span>
+                        </div>
+                        <div class="res-offers">
+                            <h4>MELHORES OFERTAS (CUSTO TOTAL)</h4>
+                            <div class="offer-row">
+                                <div class="store-info">
+                                    <div class="store-logo">AMZN</div>
+                                    <div>
+                                        <strong>Amazon</strong>
+                                        <div class="store-freight">R$ 1.150 + R$ 45,00 frete</div>
+                                    </div>
+                                </div>
+                                <div class="offer-price-col">
+                                    <strong class="total-green">R$ 1.195,00 total</strong>
+                                    <a href="#">Ir à loja</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="Container price-row" data-node-name="Container">
-                  <div class="Container" data-node-name="Container">
-                    <div class="Text" data-node-name="Text">R$ 9.999,00</div>
-                  </div>
-                  <div class="Container" data-node-name="Container">
-                    <div class="Text" data-node-name="Text">R$ 8.199,00</div>
-                  </div>
-                  <div class="Container" data-node-name="Container">
-                    <div class="Text" data-node-name="Text">Cashback R$ 200</div>
-                  </div>
+
+                <div class="load-more">
+                    <button>Carregar mais produtos...</button>
                 </div>
-              </div>
             </div>
+        </div>
 
-            <div class="Background-Border-Shadow product-card" data-node-name="Background+Border+Shadow">
-              <div class="Background product-background" data-node-name="Background">
-                <div class="Headphones" data-node-name="Headphones"></div>
-              </div>
-              <div class="Container product-info" data-node-name="Container">
-                <div class="Container brand-row" data-node-name="Container">
-                  <div class="Text" data-node-name="Text">SONY</div>
+        <div id="screen-compare" class="screen">
+            <header class="header-yellow simple-header">
+                <span class="material-symbols-outlined back-btn" onclick="navigate('screen-home')">arrow_back</span>
+                <h1>Comparar</h1>
+                <span class="material-symbols-outlined">share</span>
+            </header>
+            
+            <div class="content compare-content">
+                <div class="compare-heroes">
+                    <div class="comp-item">
+                        <div class="comp-img"></div>
+                        <h3>Samsung Galaxy S24...</h3>
+                    </div>
+                    <div class="vs-badge">VS</div>
+                    <div class="comp-item">
+                        <div class="comp-img"></div>
+                        <h3>iPhone 15 Pro Max</h3>
+                    </div>
                 </div>
-                <div class="Heading-3" data-node-name="Heading 3">
-                  <div class="Text" data-node-name="Text">Fone de Ouvido Sony<br>WH-1000XM5</div>
+
+                <h4 class="section-title">CUSTO DE AQUISIÇÃO</h4>
+                <div class="compare-table-card">
+                    <div class="col-left">
+                        <div class="price-line"><span>Preço Item</span> <span>R$ 7.499,00</span></div>
+                        <div class="price-line"><span>Frete</span> <strong class="green">Grátis</strong></div>
+                        <div class="total-line"><span>Total</span> <strong>R$ 7.499,00</strong></div>
+                        <button class="btn-yellow-solid">VER OFERTA</button>
+                    </div>
+                    <div class="col-divider"></div>
+                    <div class="col-right">
+                        <div class="price-line"><span>Preço Item</span> <span>R$ 8.299,00</span></div>
+                        <div class="price-line"><span>Frete</span> <span>R$ 25,00</span></div>
+                        <div class="total-line"><span>Total</span> <strong>R$ 8.324,00</strong></div>
+                        <button class="btn-yellow-solid">VER OFERTA</button>
+                    </div>
                 </div>
-                <div class="Container price-row" data-node-name="Container">
-                  <div class="Container" data-node-name="Container">
-                    <div class="Text" data-node-name="Text">R$ 2.499,00</div>
-                  </div>
-                  <div class="Container" data-node-name="Container">
-                    <div class="Text" data-node-name="Text">R$ 1.999,00</div>
-                  </div>
-                  <div class="Container" data-node-name="Container">
-                    <div class="Text" data-node-name="Text">O mais barato!</div>
-                  </div>
+
+                <div class="economy-banner">
+                    <span class="material-symbols-outlined">savings</span>
+                    <span>Economize R$ 825,00 escolhendo o Samsung S24 Ultra</span>
                 </div>
-              </div>
+
+                <h4 class="section-title">ESPECIFICAÇÕES TÉCNICAS</h4>
+                <div class="specs-table">
+                    <div class="spec-row">
+                        <div class="spec-label"><span class="material-symbols-outlined">memory</span> Processador</div>
+                        <div class="spec-val">Snapdragon 8 Gen 3</div>
+                        <div class="spec-val">Apple A17 Pro</div>
+                    </div>
+                    <div class="spec-row">
+                        <div class="spec-label"><span class="material-symbols-outlined">photo_camera</span> Câmera</div>
+                        <div class="spec-val">200MP + 50MP + 12MP</div>
+                        <div class="spec-val">48MP + 12MP + 12MP</div>
+                    </div>
+                    <div class="spec-row">
+                        <div class="spec-label"><span class="material-symbols-outlined">battery_full</span> Bateria</div>
+                        <div class="spec-val">5000 mAh</div>
+                        <div class="spec-val">4422 mAh</div>
+                    </div>
+                    <div class="spec-row">
+                        <div class="spec-label"><span class="material-symbols-outlined">smartphone</span> Tela</div>
+                        <div class="spec-val">6.8" AMOLED 120Hz</div>
+                        <div class="spec-val">6.7" OLED 120Hz</div>
+                    </div>
+                </div>
+
+                <h4 class="section-title">HISTÓRICO DE PREÇOS (6 MESES)</h4>
+                <div class="chart-card">
+                    <div class="bars">
+                        <div class="bar gray h-80"></div>
+                        <div class="bar gray h-70"></div>
+                        <div class="bar yellow h-50"></div>
+                        <div class="bar gray h-60"></div>
+                        <div class="bar gray h-90"></div>
+                        <div class="bar yellow h-40"></div>
+                    </div>
+                    <div class="months">
+                        <span>JAN</span><span>FEV</span><span>MAR</span><span>ABR</span><span>MAI</span><span>JUN</span>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
 
-      <div class="Nav" data-node-name="Nav">
-        <div class="Container nav-item active" data-node-name="Container">
-          <div class="Icon home-icon" data-node-name="Icon"></div>
-          <div class="Text" data-node-name="Text">Início</div>
-        </div>
-        <div class="Container nav-item" data-node-name="Container">
-          <div class="Icon search-icon-nav" data-node-name="Icon"></div>
-          <div class="Text" data-node-name="Text">Buscar</div>
-        </div>
-        <div class="Container nav-item" data-node-name="Container">
-          <div class="Icon heart-icon" data-node-name="Icon"></div>
-          <div class="Text" data-node-name="Text">Favoritos</div>
-        </div>
-        <div class="Container nav-item" data-node-name="Container">
-          <div class="Icon compare-icon" data-node-name="Icon"></div>
-          <div class="Text" data-node-name="Text">Comparar</div>
-        </div>
-        <div class="Container nav-item" data-node-name="Container">
-          <div class="Icon cart-icon" data-node-name="Icon"></div>
-          <div class="Text" data-node-name="Text">Carrinho</div>
-        </div>
-      </div>
+        <div id="screen-checkout" class="screen">
+            <header class="header-yellow simple-header">
+                <span class="material-symbols-outlined back-btn" onclick="navigate('screen-home')">arrow_back</span>
+                <h1 class="logo-font">BUSCAPE</h1>
+                <div style="width: 24px;"></div> </header>
 
-      <div class="Button floating-action" data-node-name="Button"></div>
+            <div class="content checkout-content">
+                <h2>Finalizando a compra</h2>
+                <p class="subtitle">Revise seus itens e selecione a entrega.</p>
+
+                <h4 class="section-title">SEUS PEDIDOS</h4>
+                <div class="order-item">
+                    <div class="order-img"></div>
+                    <div class="order-details">
+                        <h3>Smartphone Samsung Galaxy S23 Ultra 256GB 5G</h3>
+                        <span class="vendor">Vendido por: MegaStore</span>
+                        <div class="order-bottom">
+                            <strong>R$ 5.499,99</strong>
+                            <div class="qty-control">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-item">
+                    <div class="order-img"></div>
+                    <div class="order-details">
+                        <h3>Smart TV LED 55" 4K UHD Samsung</h3>
+                        <span class="vendor">Vendido por: Loja Oficial</span>
+                        <div class="order-bottom">
+                            <strong>R$ 2.899,00</strong>
+                            <div class="qty-control">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="section-title">ENVIO</h4>
+                <div class="shipping-card">
+                    <label>Digite seu CEP</label>
+                    <div class="cep-input-group">
+                        <div class="cep-input">
+                            <span class="material-symbols-outlined">local_shipping</span>
+                            <input type="text" value="00000-000">
+                        </div>
+                        <button class="btn-dark">Calcular</button>
+                    </div>
+                    <div class="freight-result">
+                        <span>Frete para sua região:</span>
+                        <strong class="green">Grátis</strong>
+                    </div>
+                </div>
+
+                <div class="totals-card">
+                    <div class="tot-line"><span>Subtotal (2 itens)</span> <span>R$ 8.398,99</span></div>
+                    <div class="tot-line"><span>Frete</span> <span class="green">R$ 0,00</span></div>
+                    <div class="tot-line"><span>Descontos</span> <span class="green">- R$ 199,01</span></div>
+                    <hr>
+                    <div class="tot-final">
+                        <div class="final-left">
+                            <span class="label">TOTAL DA COMPRA</span>
+                            <strong>R$ 8.199,98</strong>
+                        </div>
+                        <div class="final-right">até 10x sem juros</div>
+                    </div>
+                </div>
+
+                <button class="btn-yellow-solid full-width" style="margin-top: 16px;">
+                    <span class="material-symbols-outlined" style="margin-right: 8px;">lock</span> Finalizar Compra
+                </button>
+                <div class="secure-footer">AMBIENTE 100% SEGURO</div>
+            </div>
+        </div>
+
+        <nav id="bottom-nav" class="bottom-nav">
+            <div class="nav-item active" onclick="navigate('screen-home', this)">
+                <span class="material-symbols-outlined">home</span>
+                <span>Início</span>
+            </div>
+            <div class="nav-item" onclick="navigate('screen-search', this)">
+                <span class="material-symbols-outlined">search</span>
+                <span>Buscar</span>
+            </div>
+            <div class="nav-item">
+                <span class="material-symbols-outlined">favorite_border</span>
+                <span>Favoritos</span>
+            </div>
+            <div class="nav-item" onclick="navigate('screen-compare', this)">
+                <span class="material-symbols-outlined">compare_arrows</span>
+                <span>Comparar</span>
+            </div>
+            <div class="nav-item" onclick="navigate('screen-checkout', this)">
+                <span class="material-symbols-outlined">shopping_cart</span>
+                <span>Carrinho</span>
+            </div>
+        </nav>
     </div>
-  </div>
+
+    <script>
+        function navigate(screenId, navElement = null) {
+            // Esconde todas as telas
+            document.querySelectorAll('.screen').forEach(screen => {
+                screen.classList.remove('active');
+            });
+            // Mostra a tela selecionada
+            document.getElementById(screenId).classList.add('active');
+
+            // Lógica do Bottom Nav
+            const bottomNav = document.getElementById('bottom-nav');
+            if (screenId === 'screen-checkout') {
+                bottomNav.style.display = 'none'; // Esconde na tela de finalizar
+            } else {
+                bottomNav.style.display = 'flex';
+                // Atualiza o item ativo no menu inferior
+                if (navElement) {
+                    document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+                    navElement.classList.add('active');
+                } else {
+                    // Seleção baseada no screenId caso venha do botão "voltar"
+                    document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+                    if (screenId === 'screen-home') document.querySelectorAll('.nav-item')[0].classList.add('active');
+                    if (screenId === 'screen-search') document.querySelectorAll('.nav-item')[1].classList.add('active');
+                    if (screenId === 'screen-compare') document.querySelectorAll('.nav-item')[3].classList.add('active');
+                }
+            }
+        }
+    </script>
 </body>
 </html>
